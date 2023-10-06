@@ -51,6 +51,15 @@ const Navbar = ({
             <li>
               <CustomNavlink to={"/"}>Home</CustomNavlink>
             </li>
+            <li>
+              <CustomNavlink to={"/about"}>About</CustomNavlink>
+            </li>
+            <li>
+              <CustomNavlink to={"/contact"}>Contact</CustomNavlink>
+            </li>
+            <li>
+              <CustomNavlink to={"/login"}>Login</CustomNavlink>
+            </li>
           </ul>
         </div>
 

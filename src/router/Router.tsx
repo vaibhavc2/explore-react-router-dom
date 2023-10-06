@@ -7,6 +7,8 @@ import {
 import { Home, PageNotFound } from "./pages";
 import Layout from "../app/Layout";
 import Login from "./pages/Login";
+import About from "./pages/About";
+import Contact from "./pages/Contact";
 
 export const router = createBrowserRouter(
   createRoutesFromElements(
@@ -15,7 +17,8 @@ export const router = createBrowserRouter(
         {/* nested routes */}
         <Route path="" element={<Home />} />
         <Route path="login" element={<Login />} />
-        {/* Other Routes to be configured here */}
+        <Route path="about" element={<About />} />
+        <Route path="contact" element={<Contact />} />
       </Route>
       <Route path="*" element={<PageNotFound />} />
     </>
