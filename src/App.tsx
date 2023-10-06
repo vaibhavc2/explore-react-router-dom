@@ -1,9 +1,9 @@
 import { RouterProvider } from "react-router-dom";
 import { router } from "./router/Router";
-import { darkModePreference } from "./scripts";
+// import { darkModePreference } from "./scripts";
 
 function App() {
-  darkModePreference();
+  // darkModePreference();
 
   return <RouterProvider router={router} />;
 }
