@@ -1,12 +1,14 @@
+import { useRouteLoaderData } from "react-router-dom";
+
 export default function AboutContent() {
+  const imgBlob = useRouteLoaderData("about") as Blob | MediaSource;
+  const imgSrc = URL.createObjectURL(imgBlob);
+
   return (
     <div className="container m-auto px-6 text-gray-600 md:px-12 xl:px-6">
       <div className="space-y-6 md:flex md:gap-6 md:space-y-0 lg:items-center lg:gap-12">
         <div className="md:5/12 lg:w-5/12">
-          <img
-            src="https://tailus.io/sources/blocks/left-image/preview/images/startup.png"
-            alt="image"
-          />
+          <img src={imgSrc} alt="image" crossOrigin="anonymous" />
         </div>
         <div className="md:7/12 lg:w-6/12">
           <h2 className="text-2xl font-bold text-gray-900 md:text-4xl">
